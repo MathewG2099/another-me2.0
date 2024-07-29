@@ -7,6 +7,17 @@ function About() {
     return(
         //This is the About section
         <section id="aboutm" className="py-f"> 
+        <h1 className="about-heading">All About Me </h1>
+        <Container>
+            <Row>
+                <Col
+                xs={13}
+                md={4}
+                className="d-flex justify-content-center align-items-center mb-4 mb-md-0"
+                >
+                </Col>
+            </Row>
+        </Container>
 
         </section>
     )
