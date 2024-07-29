@@ -15,6 +15,12 @@ function About() {
                 md={4}
                 className="d-flex justify-content-center align-items-center mb-4 mb-md-0"
                 >
+                    <Image src={avatar} rounded fluid className="aboutm-image" />
+
+                   
+                </Col>
+                <Col xs={12} md={9} >
+                
                 </Col>
             </Row>
         </Container>
