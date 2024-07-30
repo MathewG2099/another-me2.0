@@ -50,6 +50,14 @@ const [messageSent, setMessageSent] = useState(false);
         valid = false;
       }
   
+// If all fields are valid, log form data and reset inputs
+if (valid) {
+    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    setName("");
+    setEmail("");
+    setMessage("");
+    setMessageSent(true);
+  }
 
- }
+ };
  
