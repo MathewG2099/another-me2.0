@@ -39,7 +39,9 @@ function About() {
                 </Col>
             </Row>
         </Container>
-
         </section>
-    )
+    );
 }
+
+// Export About
+export default About;
