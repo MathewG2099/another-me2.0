@@ -22,3 +22,13 @@ const [messageSent, setMessageSent] = useState(false);
     setEmail(e.target.value);
     setEmailError(false);
   };
+  // Handle message
+  const handleMsgChange = (e) => {
+    setMessage(e.target.value);
+    setMessageError(false);
+  };
+  
+ // Validate email format using regex
+ const validateEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
