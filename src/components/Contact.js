@@ -27,8 +27,29 @@ const [messageSent, setMessageSent] = useState(false);
     setMessage(e.target.value);
     setMessageError(false);
   };
-  
+
  // Validate email format using regex
  const validateEmail = (email) => {
     return /\S+@\S+\.\S+/.test(email);
   };
+ // Handle submission 
+ const handleSubmit = (e) => {
+    e.preventDefault();
+    let valid = true;
+     // Validate input fields and set errors if necessary
+     if (name.length <= 5) {
+        setNameError(true);
+        valid = false;
+      }
+      if (!validateEmail(email)) {
+        setEmailError(true);
+        valid = false;
+      }
+      if (message.length < 150) {
+        setMessageError(true);
+        valid = false;
+      }
+  
+
+ }
+ 
