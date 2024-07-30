@@ -60,4 +60,31 @@ if (valid) {
   }
 
  };
- 
+
+
+ // Render the contact form
+ return (
+<section id="conact">
+    <Container>
+        <Row>
+            <Col lg={8} className="mx-auto">
+            <h2 className="contact-header">Contact me </h2>
+            <p className="email-direct">
+                *Not able*
+                <a href="mailto:fireacademy@gmail.com"style={{ marginLeft: '5px' }}>Click here to email me :D</a>
+            </p>
+            {messageSent && (
+                <div className="alert-success" role="alert">
+                    Thanks for your message
+                </div>
+            )}
+            <Form onSubmit={handleSubmit} noValidate>
+
+            </Form>
+            </Col>
+        </Row>
+    </Container>
+
+</section>
+
+ )
