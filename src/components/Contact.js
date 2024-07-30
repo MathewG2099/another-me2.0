@@ -17,3 +17,8 @@ const [messageSent, setMessageSent] = useState(false);
     setName(e.target.value);
     setNameError(false);
   };
+  // Handle email 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailError(false);
+  };
